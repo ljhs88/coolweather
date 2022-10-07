@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/backstar2"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:id="@+id/to_weatherActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/delete"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/position_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@+id/delete_button"
+        android:text="临渭区"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="left|center"
+        />
+
+    <ImageView
+        android:id="@+id/position_city_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/position_city_name"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/position_city_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="14"
+        android:textSize="40dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/position_city_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/position_city_temperature"
+        android:layout_marginRight="15dp"
+        android:text="小雨"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".positionActivity">
+
+    <fragment
+        android:id="@+id/position_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="com.coolweather.colorweather.positionAreaFragment"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/add_city"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/add"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="添加城市"
+            android:background="#00000000"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

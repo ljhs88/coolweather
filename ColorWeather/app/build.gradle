@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "com.coolweather.colorweather"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main{
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation files('libs\\AMap3DMap_8.0.1_AMapSearch_7.9.0_AMapLocation_5.5.1_20211008.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'org.litepal.guolindev:core:3.2.3'
+
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+
+    dependencies {
+        // define a BOM and its version
+        implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.1"))
+
+        // define any required OkHttp artifacts without version
+        implementation("com.squareup.okhttp3:okhttp")
+        implementation("com.squareup.okhttp3:logging-interceptor")
+    }
+
+    dependencies {
+        implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    }
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'com.github.bumptech.glide:glide:4.12.0'
+        annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    }
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.caverock:androidsvg:1.2.1'
+
+    //Google推荐的EasyPermission库
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+
+}

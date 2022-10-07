@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="color_weather"></dbname>
+
+    <version value="1"></version>
+
+    <list>
+        <mapping class="com.coolweather.colorweather.db.ProvinceName"></mapping>
+        <mapping class="com.coolweather.colorweather.db.CityLocationId"></mapping>
+        <mapping class="com.coolweather.colorweather.db.CityProvince"></mapping>
+        <mapping class="com.coolweather.colorweather.db.positionCity"></mapping>
+        <mapping class="com.coolweather.colorweather.db.position"></mapping>
+        <mapping class="com.coolweather.colorweather.weatherdb.weatherLifedb"></mapping>
+        <mapping class="com.coolweather.colorweather.weatherdb.day7db"></mapping>
+        <mapping class="com.coolweather.colorweather.weatherdb.hour24db"></mapping>
+        <mapping class="com.coolweather.colorweather.weatherdb.nowTimedb"></mapping>
+        <mapping class="com.coolweather.colorweather.weatherdb.airQualitydb"></mapping>
+    </list>
+
+</litepal>

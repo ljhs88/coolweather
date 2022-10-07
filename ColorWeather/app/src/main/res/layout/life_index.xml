@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <LinearLayout
+        android:id="@+id/hum"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/humidity"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="湿度"
+            android:textSize="12dp"
+            android:textColor="#AAb"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/humidity_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@+id/hum"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/body_temperature"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="体感温度"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/body_temperature_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cloudforce"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@+id/body"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/cloud_force"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="风力"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/cloud_force_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clouddirection"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@+id/cloudforce"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/cloud_direction"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="风向"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/cloud_direction_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cloth"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/hum"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/cloth"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="穿衣"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/cloth_situation_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sport"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/body"
+        android:layout_toRightOf="@+id/cloth"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/sport"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="运动"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/sport_situation_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/medicine_"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/cloudforce"
+        android:layout_toRightOf="@+id/sport"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/medicine"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="感冒"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/medicine_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/uv"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/clouddirection"
+        android:layout_toRightOf="@+id/medicine_"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/uv"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="紫外线"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/uv_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/washcar"
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/cloth"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/washcar"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="洗车"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/washcar_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/sport"
+        android:layout_toRightOf="@+id/washcar"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/fish"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="钓鱼"
+            android:gravity="center"
+            android:textColor="#AAb"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/fish_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

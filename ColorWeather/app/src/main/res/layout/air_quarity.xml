@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/text2"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="污染指数"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/air_situation"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="优"
+            />
+
+        <TextView
+            android:id="@+id/air_percent"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="12"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text3"
+        android:orientation="vertical"
+        android:layout_width="60dp"
+        android:layout_height="250dp"
+        android:layout_toRightOf="@+id/text2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            android:text="PM10"
+            android:textColor="#AAb" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:text="PM2.5"
+            android:textColor="#AAb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="NO₂"
+            android:textSize="12dp"
+            android:textColor="#AAb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="SO2"
+            android:textSize="12dp"
+            android:textColor="#AAb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="O₃"
+            android:textSize="12dp"
+            android:textColor="#AAb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="CO"
+            android:textSize="12dp"
+            android:textColor="#AAb"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="70dp"
+        android:layout_height="250dp"
+        android:layout_toRightOf="@+id/text3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/PM10"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/PM2.5"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/NO2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/SO2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/O3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/CO"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
